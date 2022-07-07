@@ -1,0 +1,76 @@
+body {
+    background-color: #0b060d;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.it-items {
+    background: url(/img/bg-image.jpg) no-repeat;
+    background-size: contain;
+}
+
+.items-info {
+    display: none;
+    min-width: 200px;
+    background-color: #1e1e1e;
+    box-shadow: 0px 0px 10px -1px #AD1457;
+    border-radius: 20px;
+    position: fixed;
+    right: 20px;
+    top: 10%;
+    user-select: none;
+    border: 2px solid rgb(50, 50, 50);
+}
+
+.content {
+    padding: 25px 12px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.model-info,
+.model-price {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.close-btn {
+    position: absolute;
+    max-width: 13px;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    fill: #7E839A; 
+}
+
+.close-btn:hover {
+    fill: #616578;
+}
+
+.items {
+    fill: rgba(0, 0, 0, 0);
+    stroke: grey;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.items:hover {
+    animation: bliming 3s infinite;
+    fill: rgba(245, 245, 220, 0.137);
+    opacity: 1;
+}
+
+@keyframes bliming {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
